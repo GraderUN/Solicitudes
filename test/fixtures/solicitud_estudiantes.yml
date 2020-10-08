@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id_solicitud: MyString
+  id_estudiante: MyString
+  tipo_solicitud: MyString
+  fecha: MyString
+  informacion_adicional: MyText
+
+two:
+  id_solicitud: MyString
+  id_estudiante: MyString
+  tipo_solicitud: MyString
+  fecha: MyString
+  informacion_adicional: MyText

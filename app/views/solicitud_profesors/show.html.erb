@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id solicitud:</strong>
+  <%= @solicitud_profesor.id_solicitud %>
+</p>
+
+<p>
+  <strong>Id profesor:</strong>
+  <%= @solicitud_profesor.id_profesor %>
+</p>
+
+<p>
+  <strong>Tipo solicitud:</strong>
+  <%= @solicitud_profesor.tipo_solicitud %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @solicitud_profesor.Fecha %>
+</p>
+
+<p>
+  <strong>Informacion adicional:</strong>
+  <%= @solicitud_profesor.informacion_adicional %>
+</p>
+
+<%= link_to 'Edit', edit_solicitud_profesor_path(@solicitud_profesor) %> |
+<%= link_to 'Back', solicitud_profesors_path %>

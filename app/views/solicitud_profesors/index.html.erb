@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Solicitud Profesors</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Id solicitud</th>
+      <th>Id profesor</th>
+      <th>Tipo solicitud</th>
+      <th>Fecha</th>
+      <th>Informacion adicional</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @solicitud_profesors.each do |solicitud_profesor| %>
+      <tr>
+        <td><%= solicitud_profesor.id_solicitud %></td>
+        <td><%= solicitud_profesor.id_profesor %></td>
+        <td><%= solicitud_profesor.tipo_solicitud %></td>
+        <td><%= solicitud_profesor.Fecha %></td>
+        <td><%= solicitud_profesor.informacion_adicional %></td>
+        <td><%= link_to 'Show', solicitud_profesor %></td>
+        <td><%= link_to 'Edit', edit_solicitud_profesor_path(solicitud_profesor) %></td>
+        <td><%= link_to 'Destroy', solicitud_profesor, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Solicitud Profesor', new_solicitud_profesor_path %>
